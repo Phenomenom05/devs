@@ -254,8 +254,11 @@ def send_message(request, pk):
             message.recipient = recipient
 
             if sender:
-                message.username = sender.username
-            message.save()
+                message.name = sender.username
+                print(message)
+                message.save()
+            else:
+                message.save()
             return redirect("single-profile", recipient.id)
 
     context = {"form": form}
