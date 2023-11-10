@@ -45,7 +45,7 @@ class Project(models.Model):
     source_code = models.CharField(max_length=200, null=True, blank=True)
     vote_ratio = models.IntegerField(null=True, blank=True)
     vote_count = models.IntegerField(null=True, blank=True)
-    tags = models.ManyToManyField("Tag")
+    tags = models.ManyToManyField("Tag", blank=True)
     created = models.DateTimeField(auto_now_add=True)
     id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=True)
 
