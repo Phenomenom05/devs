@@ -141,6 +141,7 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
+
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
 
 # Default primary key field type
