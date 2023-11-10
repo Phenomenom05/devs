@@ -254,7 +254,7 @@ def send_message(request, pk):
             message.recipient = recipient
 
             if sender:
-                message.name = sender.name
+                message.username = sender.username
             message.save()
             return redirect("single-profile", recipient.id)
 
