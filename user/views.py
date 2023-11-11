@@ -261,7 +261,7 @@ def send_message(request, pk):
                 message.save()
             return redirect("single-profile", recipient.id)
 
-    context = {"form": form}
+    context = {"form": form, "recipient": recipient}
     return render(request, 'user/messageform.html', context)
 
 @login_required(login_url="login/")
