@@ -62,7 +62,11 @@
                     src="{{comment.sender.profile_image.url}}" alt="user" />
                 </a>
                 <div class="comment__details">
+                  {% if comment.sender.name == request.user.profile.name %}
+                  <a href="{% url 'single-profile' comment.sender.id %}" class="comment__author">You</a>
+                  {% else %}
                   <a href="{% url 'single-profile' comment.sender.id %}" class="comment__author">{{comment.sender.name}}</a>
+                  {% endif %}
                   <p class="comment__info">
                     {{comment.body}}
                   </p>
