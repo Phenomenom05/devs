@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50f975da-bd81-4f72-85e0-52c61faafec5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/images/WIN_20230312_10_24_53_Pro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/WIN_20230312_10_31_45_Pro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles_build/static/images/WIN_20230312_10_24_53_Pro.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
