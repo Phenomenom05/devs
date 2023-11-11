@@ -7,11 +7,11 @@
       <change beforePath="$PROJECT_DIR$/devs/proj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/devs/proj/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devs/proj/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/devs/proj/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devs/proj/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/devs/proj/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prov/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prov/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prov/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prov/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prov/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/prov/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/prov/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/prov/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/prov/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/prov/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
