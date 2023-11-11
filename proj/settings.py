@@ -12,6 +12,13 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os.path
 from pathlib import Path
 import environ
+import cloudinary
+
+cloudinary.config(
+    cloud_name="dzi8f8myi",
+    api_key="943389869199828",
+    api_secret="***************************"
+)
 
 
 env = environ.Env()
@@ -41,8 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
     'cloudinary_storage',
+    'django.contrib.staticfiles',
     'cloudinary',
     "user.apps.UserConfig",
 ]
@@ -87,9 +94,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'e3AA5Daa1f14D651b5bDgc5f4gD*6b3F',
+        'PASSWORD': 'B4Gd1*gfEE-*gfd*ecDggDg4CDFGE5CB',
         'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '20799',
+        'PORT': '21923',
     }
 }
 
@@ -150,14 +157,13 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
-STORAGES = {'default': {"BACKEND": 'cloudinary_storage.storage.MediaCloudinaryStorage'}, "staticfiles_build": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",}, }
-
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
 
+STORAGES = {'default': {"BACKEND": 'cloudinary_storage.storage.MediaCloudinaryStorage'}, "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",}, }
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-CLOUDINARY_STORAGE = {'CLOUD_NAME': 'dzi8f8myi', 'API_KEY': 943389869199828, 'API_SECRET': 'XS3JY2UHoQWbysOOXleXDMy1OTE',}
+CLOUDINARY_STORAGE = {'CLOUD_NAME': env('CLOUD_NAME'), 'API_KEY': env('API_KEY'), 'API_SECRET': env('API_SECRET'),}
 
 
 
