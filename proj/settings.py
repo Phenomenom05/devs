@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'cloudinary',
     "user.apps.UserConfig",
 ]
@@ -150,14 +150,15 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
+STORAGES = {'default': {"BACKEND": 'cloudinary_storage.storage.MediaCloudinaryStorage'}, "staticfiles_build": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",}, }
+
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-STORAGES = {'default': {"BACKEND": 'cloudinary_storage.storage.MediaCloudinaryStorage'}, "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",}, }
+CLOUDINARY_STORAGE = {'CLOUD_NAME': 'dzi8f8myi', 'API_KEY': 943389869199828, 'API_SECRET': 'XS3JY2UHoQWbysOOXleXDMy1OTE',}
 
-CLOUDINARY_STORAGE = {'CLOUD_NAME': 'dzi8f8myi', 'API_KEY': 943389869199828, 'API_SECRET': 'XS3JY2UHoQWbysOOXleXDMy1OTE', }
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
