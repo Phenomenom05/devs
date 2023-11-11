@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'proj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('DATABASE_NAME'),
-        'USER': env('DATABASE_USER'),
-        'PASSWORD': env('DATABASE_PASS'),
-        'HOST': env('DATABASE_HOST'),
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'e3AA5Daa1f14D651b5bDgc5f4gD*6b3F',
+        'HOST': 'monorail.proxy.rlwy.net',
         'PORT': '20799',
     }
 }
@@ -129,7 +129,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = env('EMAIL')
+EMAIL_HOST_USER = 'phedave05@gmail.com'
 EMAIL_HOST_PASSWORD = 'bpmxlvmdmeavkpio'
 
 
@@ -157,7 +157,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static/images")
 
 STORAGES = {'default': {"BACKEND": 'cloudinary_storage.storage.MediaCloudinaryStorage'}, "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",}, }
 
-CLOUDINARY_STORAGE = {'CLOUD_NAME': env('CLOUD_NAME'), 'API_KEY': env('API_KEY'), 'API_SECRET': env('API_SECRET'), }
+CLOUDINARY_STORAGE = {'CLOUD_NAME': 'dzi8f8myi', 'API_KEY': 943389869199828, 'API_SECRET': 'XS3JY2UHoQWbysOOXleXDMy1OTE', }
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
