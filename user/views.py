@@ -264,7 +264,7 @@ def send_message(request, pk):
     context = {"form": form}
     return render(request, 'user/messageform.html', context)
 
-
+@login_required(login_url="login/")
 def delete_message(request, pk):
     profile = request.user.profile
     message = profile.messages.get(id=pk)
@@ -273,7 +273,7 @@ def delete_message(request, pk):
 
 
 # Comment section
-@login_required(login_url="login/")
+@login_required(login_url="login")
 def Comments(request, pk):
     sender = request.user.profile
     recipient = Project.objects.get(id=pk)
