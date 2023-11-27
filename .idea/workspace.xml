@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50f975da-bd81-4f72-85e0-52c61faafec5" name="Changes" comment="" />
+    <list default="true" id="50f975da-bd81-4f72-85e0-52c61faafec5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_files.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build_files.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +37,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "last_opened_file_path": "C:/Users/pheda/PycharmProjects/djang/user/templates/user",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RecentsManager">
